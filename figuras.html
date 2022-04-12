@@ -7,9 +7,55 @@
     <title>Figuras geométricas - Curso práctico de javascript</title>
 </head>
 <body>
-   <h1>
-       Figuras geométricas
-   </h1> 
+  <header>
+      <h1>Práctica Curso Javascript</h1>
+  </header>
+  <section>
+      <h2>Calcular el área y perímetro de mi cuadrado</h2>
+      <form action="">
+          <label for="inputCuadrado">  <!-- En el for pongo el id de la caja de texto para conectarlo con el label-->
+            Escribe cúanto mide el lado de tu cuadrado
+          </label>
+          <input type="number" id = "inputCuadrado"/>  
+          <input type="button" value= "Calcular Perímetro" onClick ="calcularPerimetroCuadrado()"></input> <!-- Directamente invoco la función en el botón a través de onclick = función () -->
+          <input type="button" value= "Calcular Área" onClick ="calcularAreaCuadrado()" ></input> <!-- Hago lo mismo con el botón para calcular el área-->
+      </form>
+  </section>
+
+  <section>
+    <h2>Calcular el área y perímetro de mi triángulo</h2>
+    <form action="">
+        <label >  <!-- En el for pongo el id de la caja de texto para conectarlo con el label-->
+          Escribe cúanto miden los parámetros del triángulo
+        </label>
+
+        <input type="number" id = "lado1" />
+        <input type="number" id = "lado2"/> 
+        <input type="number" id = "base"/> 
+        <input type="number" id = "altura"/> 
+        
+
+        <input type="button" value= "Calcular Perímetro" onClick ="calcularPerimetroTriangulo ()"></input> <!-- Directamente invoco la función en el botón a través de onclick = función () -->
+        <input type="button" value= "Calcular Área" onClick ="calcularAreaTriangulo ()" ></input> <!-- Hago lo mismo con el botón para calcular el área-->
+    </form>
+</section>
+
+<section>
+    <h2>Calcular el área y perímetro de mi círculo</h2>
+    <form action="">
+        <label >  <!-- En el for pongo el id de la caja de texto para conectarlo con el label-->
+          Escribe cúanto miden los parámetros del circulo
+        </label>
+
+        <input type="number" id = "radio" />
+        
+        <input type="button" value= "Calcular Diámetro" onClick ="calcularDiametroCirculo ()" ></input> 
+        <input type="button" value= "Calcular Perímetro" onClick ="calcularPerimetroCirculo ()"></input> 
+        <input type="button" value= "Calcular Área" onClick ="calcularAreaCirculo ()"></input> 
+
+    </form>
+</section>
+
    <script src = "./figuras.js">
        
    </script>
