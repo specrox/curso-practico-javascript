@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # curso-practico-javascript
 
 =======
